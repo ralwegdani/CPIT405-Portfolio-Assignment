@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Reham Alwegdani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <h1>Reham Alwegdani</h1>
+                <p>IT Student | Full-Stack &amp; UI/UX</p>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="labs.html">Labs</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wrap">
+
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="images/photo.png" alt="Photo of Reham Alwegdani" class="profile-photo">
+
+                <h2 class="side-title">Contact Info</h2>
+                <ul class="info-list center">
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:ralwakdani@stu.kau.edu.sa">ralwakdani@stu.kau.edu.sa</a>
+                    </li>
+                    <li>
+                        <strong>Phone:</strong>
+                        <a href="tel:+966504936856">+966 50 493 6856</a>
+                    </li>
+                </ul>
+
+                <div class="social">
+                    <a href="https://github.com/ralwegdani" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
+                    <a href="https://www.linkedin.com/in/reham-a-7298002bb/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section class="card">
+                <h2>Contact Me</h2>
+
+                <!-- FormSubmit sends messages to the university email below.
+                     The first message triggers a one-time activation email to that address. -->
+                <form action="https://formsubmit.co/ralwakdani@stu.kau.edu.sa" method="POST" class="contact-form">
+                    <input type="hidden" name="_subject" value="New message from portfolio">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <fieldset class="msg-type">
+                        <legend>Message Type:</legend>
+                        <label><input type="radio" name="message_type" value="Inquiry" checked> Inquiry</label>
+                        <label><input type="radio" name="message_type" value="Feedback"> Feedback</label>
+                    </fieldset>
+
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Reham Alwegdani | CPIT-405 Portfolio</p>
+    </footer>
+
+</body>
+</html>
